@@ -1,0 +1,307 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{FreeSans} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Purisa} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Ariadni-Karolina Alexiou}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{FreeSans} Curriculum {Vit\fontspec[Variant = 3]{FreeSans}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+
+
+2011 -- 2013 & \textbf{Master of Science} \\ 
+& \textsc{Computer Science} \\ 
+& \textit{ETH Zurich}\\
+ \small  & GPA: 5.5/6 \\
+Master Thesis
+& \textbf{Adaptive filters for optimizing range query}\\
+& \textbf{processing on data across multiple}\\
+& \textbf{physical locations}\\
+& \textit{Supervised by Donald Kossmann}\\
+& \textsc{Grade: 6/6}\\
+Semester Project
+& \textbf{Computation of histograms on FPGAs}\\
+& \textit{Supervised by Gustavo Alonso}\\
+& \textsc{Grade: 5/6}\\
+&\\
+	 
+
+
+2007 -- 2011 & \textbf{Bachelor of Science}\\
+& \textsc{Computer Science} \\
+& \textit{University of Athens} \\
+\small  & GPA: 9.3/10 -- Top graduate in fall 2011\\
+Bachelor Thesis
+& \textbf{Refactoring and extending the UI of a Cloud}\\
+& \textbf{Management System, using Google Web}\\
+& \textbf{Toolkit}\\
+& \textit{Supervised by Alex Delis}\\
+& \textsc{Grade: 10/10}\\
+	
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+{\raggedleft\textsc{Current, from September 2013}\par}
+
+{\raggedright\large Software Developer at Teralytics AG, Zurich\\
+}
+
+\normalsize{Working with geospatial databases (PostgreSQL), Apache Hadoop and data analysis libraries to provide business insights on large volumes of data. Developed a workflow manager for complex data analytics and data management and integration solutions in Python and Java.}
+
+{\raggedleft\textsc{March 2013 - June 2013}\par}
+
+{\raggedright\large Software Engineering Intern at Google, Zurich\\
+}
+
+\normalsize{Worked with Google Web Toolkit on the Youtube Analytics Team. Responsibilities included database migration and data analysis.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{February 2012 -- May 2012}\par}
+
+{\raggedright\large Teaching Assistant for the Data Modeling and Databases course at ETH, Zurich\\}
+
+\normalsize{Taught basic and intermediate concepts of databases (eg. UML, Relational Models, Normal Forms, Transactions, SQL operators), created exercises for students and graded their final SQL and Java projects.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{March 2011 -- June 2011}\par}
+
+{\raggedright\large Game programmer at 4pi Publications, Athens\\}
+
+\normalsize{Created flash games for a children's magazine in ActionScript 3.0, working closely with sound and graphic artists.}\\
+
+
+%----------------------------------------------------------------------------------------
+	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & Albisstrasse 35, Zurich 8038 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +41 (0)787 442 649 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:carolinegr@gmail.com}{carolinegr@gmail.com} \\ % Email address
+%\Keyboard & \href{http://www.johnsmith.com}{http://www.johnsmith.com} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+\begin{tabular}{ll}
+Programming Languages
+& \textsc{Python}, \textsc{Java} \\
+& \textsc{C/C++}, \textsc{VHDL}, \textsc{SQL} \\
+& \textsc{PHP}, \textsc{HTML}, \textsc{bash} \\
+& \textsc{JavaScript/JQuery}, \textsc{\LaTeX} \\
+&\\
+Frameworks
+& Hadoop, Hive, Pig, pandas \\
+& Redis, MongoDB, PostgreSQL \\
+& JQuery, d3 \\
+& Boost, CGAL \\
+& Adobe Flash, FlashDevelop \\
+& MATLAB, R, QGIS \\
+& Open Office, Eclipse, IDEA\\
+
+
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+2011	 & \textbf{Excellence and Opportunity Scholarship}\\
+& \textit{Systems Group at ETH Zurich}\\ \\
+
+%------------------------------------------------
+
+2009	 & \textbf{``Antonis Papadakis'' scholarship
+}\\
+& \textit{Greek State Scholarships
+Foundation}\\ \\
+
+
+2009	& \textbf{Ecopolis Award for Innovation in Ecology
+}\\
+& \textit{For a project proposal for monitoring}\\
+& \textit{vehicle-induced pollution}\\
+
+\end{tabular}\\[10pt]
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+%2010 (athens)	
+%Volunteer in the 6th Hellenic Conference on Artificial Intelligence
+%2008 – 09 (athens)	 Participation in Microsoft Imagine Cup
+%2008 (samos)	 Panhellenic Conference on Informatics
+%2008 (athens)	 3IA International Conference on Computer Graphics
+
+\section{Conferences} 
+
+\begin{tabular}{rl}
+\textsc{2014}
+& Presented published paper at \\
+& VLDB 2014 \\
+& \small Hangzhou, China \\
+\textsc{2014}
+& Speaker at \\
+& Pydata conference \\
+& \small Berlin, Germany \\
+\textsc{2014}
+& Speaker at \\
+& Swiss Postgres conference \\
+& \small Rapperswil, Switzerland \\
+\textsc{2014}
+& Speaker at \\
+& Swiss Big Data User Group Meetup \\
+& \small Zurich, Switzerland \\
+
+
+\textsc{2012}
+& Presented Master Thesis at \\
+& the ECC Workshop \\
+& \small Brunnen, Switzerland \\
+
+\textsc{2010}
+& Participated in the Onassis Summer School \\
+& in Computer Science: Distinguished Lectures \\
+& on Information Security \\
+& \small Heracleion, Greece \\
+
+%\textsc{2009}
+%& Participated in Microsoft Imagine Cup \\
+%&\small  Athens, Greece\\
+
+
+
+\end{tabular}\\[10pt]
+
+%\section{Other}
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
