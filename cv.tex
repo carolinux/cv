@@ -24,11 +24,12 @@
 
 \documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+\usepackage[hmargin=1.25cm, vmargin=1.25cm]{geometry} % Document margins
 
 \usepackage{marvosym} % Required for symbols in the colored box
 \usepackage{ifsym} % Required for symbols in the colored box
-
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 
 % Fonts and tweaks for XeLaTeX
@@ -55,7 +56,7 @@
 % Example footer:
 %\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
 
-\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+%\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
 
 \usepackage{titlesec} % Allows creating custom \section's
 
@@ -73,8 +74,8 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\sffamily\Huge Ariadni-Karolina Alexiou}\\ % Your name
-{\color{headings}\fontspec[Variant = 2]{FreeSans} Curriculum {Vit\fontspec[Variant = 3]{FreeSans}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+%\par{\centering{\sffamily\Huge Ariadni-Karolina Alexiou}\\ % Your name
+%{\color{headings}\fontspec[Variant = 2]{FreeSans} Curriculum {Vit\fontspec[Variant = 3]{FreeSans}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
 	
 %----------------------------------------------------------------------------------------
 
@@ -116,13 +117,13 @@ Semester Project
 & \textit{University of Athens} \\
 \small  & GPA: 9.3/10 -- Top graduate in fall 2011\\
 Bachelor Thesis
-& \textbf{Refactoring and extending the UI of a Cloud}\\
+& \textbf{refactoring and extending the ui of a cloud}\\
 & \textbf{Management System, using Google Web}\\
 & \textbf{Toolkit}\\
 & \textit{Supervised by Alex Delis}\\
 & \textsc{Grade: 10/10}\\
 	
-\end{tabular}\\[10pt]
+\end{tabular}\\[9pt]
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -133,12 +134,19 @@ Bachelor Thesis
 %------------------------------------------------
 % WORK EXPERIENCE 1
 %------------------------------------------------
-{\raggedleft\textsc{Current, from September 2013}\par}
+{\raggedleft\textsc{May 2014 - Present}\par}
+
+{\raggedright\large Technical contributor to Open Source projects\\
+}
+
+\normalsize{ I am a contributor to QGIS core (C++/Python) and maintainer of the TimeManager plugin which enables the user to step through and animate spatiotemporal data in a variety of formats. Other notable contributions include refactoring/tests/devOps on OpenBazaar (a distributed marketplace) and pro-bono consulting/development for automating the data pipeline of the NewIncentives charity organization.}
+
+{\raggedleft\textsc{September 2013 - June 2015}\par}
 
 {\raggedright\large Software Developer at Teralytics AG, Zurich\\
 }
 
-\normalsize{Working with geospatial databases (PostgreSQL), Apache Hadoop and data analysis libraries to provide business insights on large volumes of data. Developed a workflow manager for complex data analytics and data management and integration solutions in Python and Java.}
+\normalsize{Worked with geospatial databases (PostgreSQL), Apache Hadoop, Spark and other data analysis libraries to provide business insights on large volumes of data. Developed solutions for complex data analytics, visualizations, reports, data management and integration in Python, Scala and Java.}
 
 {\raggedleft\textsc{March 2013 - June 2013}\par}
 
@@ -165,7 +173,7 @@ Bachelor Thesis
 
 {\raggedright\large Game programmer at 4pi Publications, Athens\\}
 
-\normalsize{Created flash games for a children's magazine in ActionScript 3.0, working closely with sound and graphic artists.}\\
+\normalsize{Created flash games for an educational magazine in ActionScript 3.0, working closely with sound and graphic artists.}\\
 
 
 %----------------------------------------------------------------------------------------
@@ -181,11 +189,15 @@ Bachelor Thesis
 %----------------------------------------------------------------------------------------
 
 \colorbox{shade}{\textcolor{text1}{
-\begin{tabular}{c|p{7cm}}
-\raisebox{-4pt}{\textifsymbol{18}} & Albisstrasse 35, Zurich 8038 \\ % Address
-\raisebox{-3pt}{\Mobilefone} & +41 (0)787 442 649 \\ % Phone number
-\raisebox{-1pt}{\Letter} & \href{mailto:carolinegr@gmail.com}{carolinegr@gmail.com} \\ % Email address
-%\Keyboard & \href{http://www.johnsmith.com}{http://www.johnsmith.com} \\ % Website
+        \begin{tabular}{l|c}
+        \begin{tabular}{l|p{5cm}}
+    %\raisebox{-\totalheight} & & \vspace{0cm} \includegraphics[height=2.5cm]{zmirk_small} \\ % Name
+    \raisebox{0pt}{\Smiley} & \textbf{Ariadni-Karolina Alexiou} \\ % Name
+    \raisebox{-1pt}{\textifsymbol{18}} & Albisstrasse 35, Zurich 8038 \\ % Address
+    \raisebox{-1pt}{\Mobilefone} & +41 (0)787 442 649 \\ % Phone number
+    \raisebox{-1pt}{\Letter} & \href{mailto:carolinegr@gmail.com}{carolinegr@gmail.com} \\ % Email address
+    \Keyboard & \href{http://www.github.com/carolinux}{http://www.github.com/carolinux} \\ % Github
+        \end{tabular} & \raisebox{-1.25cm}{\includegraphics[height=2.5cm]{zmirk_small}} \\ % Name
 \end{tabular}
 }
 }\\[10pt]
@@ -201,20 +213,20 @@ Bachelor Thesis
 \section{Computer Skills} 
 
 \begin{tabular}{ll}
-Programming Languages
-& \textsc{Python}, \textsc{Java} \\
+Languages
+& \textsc{Python}, \textsc{Java}, \textsc{Scala} \\
 & \textsc{C/C++}, \textsc{VHDL}, \textsc{SQL} \\
 & \textsc{PHP}, \textsc{HTML}, \textsc{bash} \\
-& \textsc{JavaScript/JQuery}, \textsc{\LaTeX} \\
+& \textsc{JavaScript}, \textsc{\LaTeX} \\
 &\\
 Frameworks
-& Hadoop, Hive, Pig, pandas \\
+& Hadoop, Spark, pandas \\
 & Redis, MongoDB, PostgreSQL \\
 & JQuery, d3 \\
 & Boost, CGAL \\
 & Adobe Flash, FlashDevelop \\
 & MATLAB, R, QGIS \\
-& Open Office, Eclipse, IDEA\\
+& Open Office, Eclipse, IDEA, Vim\\
 
 
 \end{tabular}
@@ -261,6 +273,9 @@ Foundation}\\ \\
 \section{Conferences} 
 
 \begin{tabular}{rl}
+\textsc{2015}
+& Presented workshop at \\
+& QGIS user \& dev conference \\
 \textsc{2014}
 & Presented published paper at \\
 & VLDB 2014 \\
